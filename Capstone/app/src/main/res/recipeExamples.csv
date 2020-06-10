@@ -1,0 +1,4 @@
+id,name,instructions,nationality,spicy,gluten,dairy,nuts,vegan,vegatarian,kosher,halal,sugarfree,fish
+0,grilled cheese,Place a square of cheese on a piece of bread and toast for 20 minutes,US,N,Y,Y,N,N,Y,Y,Y,Y,N
+1,pb&j,Place jelly on one piece of bread and pb on another. Place slices together,US,N,Y,N,Y,Y,Y,Y,Y,N,N
+2,sub sandwhich,"Cut open baguette and place slices of ham, pepperoni, and salami in between the slices then add cheese and lettuce",IT,Y,Y,Y,N,N,N,N,N,Y,N

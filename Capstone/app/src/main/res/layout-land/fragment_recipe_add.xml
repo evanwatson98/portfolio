@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="0.1" android:background="#545E5A"
+            android:gravity="center_vertical">
+        <ImageButton
+                android:src="@drawable/navdrawer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" android:id="@+id/nav_button" android:background="#0000"
+                android:layout_weight="0.2"/>
+        <ImageButton
+                android:id="@+id/undo_button_add_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:background="#0000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/undo"/>
+
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp" android:layout_weight="0.6"/>
+    </LinearLayout>
+
+
+    <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="0.1">
+
+        <ImageButton
+                android:id="@+id/back_button_add_recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/arrowleft" android:background="#0000" android:layout_gravity="center"/>
+    </FrameLayout>
+    <LinearLayout
+            android:id="@+id/add_recipe_page_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="30sp" android:layout_weight="0.70"></LinearLayout>
+
+    <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="0.1" android:padding="10dp">
+
+        <ImageButton
+                android:id="@+id/next_button_add_recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:srcCompat="@drawable/arrow" android:background="#0000" android:layout_gravity="center"/>
+        <Button
+                android:id="@+id/finish_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FINISH"
+                android:visibility="gone"
+                android:background="#545E5A" android:textStyle="bold" android:textColor="#FFFFFF"
+                android:gravity="center" android:layout_gravity="center"/>
+    </FrameLayout>
+
+</LinearLayout>

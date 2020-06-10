@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical" android:padding="20dp">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/add_food_addrecipe_page1"
+            android:visibility="visible"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/add_food_addrecipe_page3"
+            android:visibility="visible" android:padding="10sp">
+        <TextView
+                android:id="@+id/foodQuantitylabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Qty"
+                android:textAlignment="gravity"
+                android:textSize="18sp"
+                android:layout_weight="0.2"/>
+        <Spinner
+                android:id="@+id/quantitySpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"/>
+        <Spinner
+                android:id="@+id/measurementSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/add_food_addrecipe_page4"
+            android:visibility="visible" android:padding="10sp">
+        <TextView
+                android:id="@+id/foodExpirationlabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Expiration"
+                android:textAlignment="gravity"
+                android:textSize="18sp"
+                android:layout_weight="0.35"/>
+        <TextView
+                android:id="@+id/datePickerTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Select Date"
+                android:textAlignment="gravity"
+                android:textSize="18sp"
+                android:layout_weight=".65" android:gravity="right"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/add_food_addrecipe_page5"
+            android:visibility="visible" android:padding="10sp">
+        <TextView
+                android:id="@+id/foodGrouplabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Food Group"
+                android:textAlignment="gravity"
+                android:textSize="18sp"
+                android:layout_weight="0.4"/>
+        <Spinner
+                android:id="@+id/foodGroupSpinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="end" android:layout_weight=".6"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/add_food_addrecipe_page6"
+            android:visibility="visible" android:padding="10sp">
+        <TextView
+                android:id="@+id/foodTypelabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:layout_weight=".2"/>
+        <Spinner
+                android:id="@+id/foodTypeSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8" android:gravity="end"/>
+    </LinearLayout>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/redText" android:textColor="#FF0000"
+            android:padding="10sp"/>
+
+</LinearLayout>

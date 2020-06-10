@@ -1,0 +1,15 @@
+<?php
+$con = mysqli_connect("db.sice.indiana.edu","i494f19_team39","my+sql=i494f19_team39","i494f19_team39");
+
+$houseID = $_POST['houseID'];
+
+$sql = "SELECT uniqueToken from household Where houseID = '$houseID'";
+
+if (mysqli_query($con, $sql))
+	{echo "HEY ALL";}
+
+Else
+	{ die('SQL Error: ' . mysqli_error($con) ); }
+
+mysqli_close($con);
+?>

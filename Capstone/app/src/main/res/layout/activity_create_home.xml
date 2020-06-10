@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="109dp"
+                android:layout_height="51dp"
+                app:srcCompat="@android:drawable/ic_menu_revert"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="104dp"/>
+
+        <TextView
+                android:id="@+id/textView3"
+                android:layout_width="211dp"
+                android:layout_height="61dp"
+                android:text="Create Home"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="104dp"
+                tools:layout_editor_absoluteY="179dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

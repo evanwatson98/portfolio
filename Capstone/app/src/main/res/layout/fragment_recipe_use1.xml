@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight=".1" android:background="#545E5A">
+        <ImageButton
+                android:src="@drawable/navdrawer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" android:id="@+id/nav_button" android:background="#0000"
+                android:layout_weight="0.2"/>
+        <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="0.8"/>
+
+    </LinearLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="5sp" android:layout_weight="0.9">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4sp">
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/sufficient_text" android:textSize="22sp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/insufficient_text"
+                    android:textColor="#9b870c" android:textSize="22sp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/missing_text"
+                    android:textColor="@color/quantum_vanillared900" android:textSize="22sp"/>
+            <TextView
+                    android:text="Are you sure you would like to continue?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView14" android:textSize="28sp"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_weight="0.2"/>
+                <Button
+                        android:text="No"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" android:id="@+id/use_recipe_deny"
+                        android:layout_weight="0.2"
+                        android:background="#545E5A" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_weight="0.2"/>
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" android:id="@+id/use_recipe_confirm"
+                        android:layout_weight="0.2"
+                        android:text="Yes"
+                        android:background="#A9D08D" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_weight="0.2"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

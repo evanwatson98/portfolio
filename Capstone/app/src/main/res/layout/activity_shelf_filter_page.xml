@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/shelffilternavdrawer"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="0.1" android:background="#545E5A"
+            android:gravity="center_vertical">
+        <ImageButton
+                android:src="@drawable/navdrawer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" android:id="@+id/nav_button" android:background="#0000"
+                android:layout_weight="0.2"/>
+        <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="0.8"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="0.9">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/filterHeaderConstraint"
+                android:layout_width="384dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="88dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.481"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                    android:id="@+id/filterSubHeader"
+                    android:layout_width="96dp"
+                    android:layout_height="23dp"
+                    android:text="Welcome to "
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.196"/>
+
+            <ImageButton
+                    android:id="@+id/filterShelfBack"
+                    android:layout_width="51dp"
+                    android:layout_height="68dp"
+                    android:adjustViewBounds="true"
+                    android:background="#0000"
+                    android:scaleType="fitCenter"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView17"
+                    app:layout_constraintHorizontal_bias="0.833"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.754"
+                    app:srcCompat="@drawable/shelffilterblack"/>
+
+            <ImageButton
+                    android:id="@+id/editPencilFilter"
+                    android:layout_width="38dp"
+                    android:layout_height="42dp"
+                    android:adjustViewBounds="true"
+                    android:background="#0000"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.93"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.686"
+                    app:srcCompat="@drawable/pencil"/>
+
+            <TextView
+                    android:id="@+id/filterHeader"
+                    android:layout_width="229dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginLeft="64dp"
+                    android:text="The Shelf"
+                    android:textSize="50dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.318"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.728"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="360dp"
+                android:layout_height="365dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.568"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.636">
+
+            <Spinner
+                    android:id="@+id/spinnerSort"
+                    android:layout_width="314dp"
+                    android:layout_height="50dp"
+                    android:background="#BAFF8F"
+                    android:popupBackground="#BAFF8F"
+                    android:textColor="#FFFFFF"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.126"/>
+
+            <Spinner
+                    android:id="@+id/spinnerFilter"
+                    android:layout_width="311dp"
+                    android:layout_height="59dp"
+                    android:layout_marginBottom="164dp"
+                    android:background="#BAFF8F"
+                    android:popupBackground="#BAFF8F"
+                    android:textColor="#FFFFFF"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.551"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinnerSort"
+                    app:layout_constraintVertical_bias="1.0"/>
+
+            <Button
+                    android:id="@+id/submitShelfFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="52dp"
+                    android:background="#BAFF8F"
+                    android:text="DONE"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinnerFilter"
+                    app:layout_constraintVertical_bias="1.0"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/drawer_header"
+            app:menu="@menu/drawer_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

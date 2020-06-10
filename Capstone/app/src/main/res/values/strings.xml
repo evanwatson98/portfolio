@@ -1,0 +1,252 @@
+<resources>
+
+    <string name="app_name">Keepin\' It Fresh</string>
+    <string name="title_activity_recipe_page">recipePage</string>
+    <string name="title_activity_skeleton_page">skeletonPage</string>
+    <string name="server_client_id">702845172338-l1sbhfcb09qeqb41lim1bdnmrmcofhfs.apps.googleusercontent.com
+    </string>
+    <string-array name="nationality_select">
+        <item>USA</item>
+        <item>ITL</item>
+        <item>JPN</item>
+        <item>BZL</item>
+        <item>MEX</item>
+        <item>GER</item>
+    </string-array>
+
+    <string-array name="category_select">
+        <item>Tacos</item>
+        <item>Burgers</item>
+        <item>Curries</item>
+        <item>Teas</item>
+        <item>Pastas</item>
+        <item>Pastries</item>
+        <item>Cookies</item>
+        <item>Deserts</item>
+        <item>Rices</item>
+        <item>Gumbos</item>
+        <item>Soups</item>
+        <item>Salads</item>
+        <item>Sandwiches</item>
+        <item>Wraps</item>
+        <item>Burritos</item>
+        <item>Quick Meals</item>
+    </string-array>
+
+    <string-array name="unit_select">
+        <item>Liters</item>
+        <item>Cups</item>
+        <item>Ounces</item>
+        <item>Tablespoons</item>
+        <item>Teaspoons</item>
+        <item>Grams</item>
+    </string-array>
+
+    <string name="title_activity_add_recipe_page">AddRecipePage</string>
+    <string name="title_activity_forum_view_recipe">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string-array name="quantity">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+    </string-array>
+
+    <string-array name="measurements">
+        <item>Select Measurement</item>
+        <item>Units/Servings</item>
+        <item>Liters</item>
+        <item>Cups</item>
+        <item>Ounces</item>
+        <item>Tablespoons</item>
+        <item>Teaspoons</item>
+        <item>Grams</item>
+    </string-array>
+
+    <string-array name="unit_only">
+        <item>Units/Servings</item>
+    </string-array>
+
+    <string-array name="foodGroups">
+        <item>Select Food Group</item>>
+        <item>Fruit</item>
+        <item>Vegetable</item>
+        <item>Protein</item>
+        <item>Grain</item>
+        <item>Dairy</item>
+        <item>Sweet/Treat</item>
+    </string-array>
+
+    <string-array name="fruit">
+        <item>Select Type</item>>
+        <item>Apple</item>
+        <item>Banana</item>
+        <item>Orange</item>
+        <item>Grape</item>
+        <item>Strawberry</item>
+        <item>Watermelon</item>
+        <item>Lemon</item>
+        <item>Avocado</item>
+        <item>Peach</item>
+        <item>Blueberry</item>
+        <item>Pineapple</item>
+        <item>Cantaloupe</item>
+        <item>Cherry</item>
+        <item>Pear</item>
+        <item>Lime</item>
+        <item>Mango</item>
+        <item>Raspberry</item>
+        <item>Blackberry</item>
+        <item>Plum</item>
+        <item>Nectarines</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="vegetable">
+        <item>Select Type</item>
+        <item>Potato</item>
+        <item>Tomato</item>
+        <item>Carrots</item>
+        <item>Broccoli</item>
+        <item>Bell Pepper</item>
+        <item>Lettuce</item>
+        <item>Cucumber</item>
+        <item>Celery</item>
+        <item>Spinach</item>
+        <item>Garlic</item>
+        <item>Corn</item>
+        <item>Mushroom</item>
+        <item>Cabbage</item>
+        <item>Green Beans</item>
+        <item>Cauliflower</item>
+        <item>Green Onion</item>
+        <item>Cilantro</item>
+        <item>Sweet Potato</item>
+        <item>Asparagus</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="protein">
+        <item>Select Type</item>>
+        <item>Beef</item>
+        <item>Poultry</item>
+        <item>Pork</item>
+        <item>Fish</item>
+        <item>Shellfish</item>
+        <item>Egg</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="grain">
+        <item>Select Type</item>>
+        <item>Bread</item>
+        <item>Pasta</item>
+        <item>Rice</item>
+        <item>Tortilla</item>
+        <item>Cereal</item>
+        <item>Oat</item>
+        <item>Barley</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="dairy">
+        <item>Select Type</item>>
+        <item>Milk</item>
+        <item>Yogurt</item>
+        <item>Cheese</item>
+        <item>Cultured Dairy</item>
+        <item>Butter</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="treat">
+        <item>Select Type</item>>
+        <item>Pastry</item>
+        <item>Frozen Dessert</item>
+        <item>Chips</item>
+        <item>Crackers</item>
+        <item>Candy</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="empty">
+        <item>Select Food Group First</item>
+    </string-array>
+
+
+    <string-array name="shelfSortOptions">
+        <item>Sort By</item>
+        <item>Newest</item>
+        <item>Oldest</item>
+        <item>Quantity</item>
+        <item>Expiration Date</item>
+    </string-array>
+
+    <string-array name="shelfFilterOptions">
+        <item>Filter By</item>
+        <item>Organic</item>
+        <item>Vegetable</item>
+        <item>Fruit</item>
+        <item>Carbs</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

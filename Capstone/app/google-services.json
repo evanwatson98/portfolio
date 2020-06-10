@@ -1,0 +1,50 @@
+{
+	"web":
+		{
+			"client_id":"702845172338-138ihs7cunu1rra2disskjn94gompi9m.apps.googleusercontent.com",
+			"project_info":"keepinitfresh",
+			"auth_uri":"https://accounts.google.com/o/oauth2/auth",
+			"token_uri":"https://oauth2.googleapis.com/token",
+			"auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+			"client_secret":"UwGazByFnYvgBAk7Vt-pB3bF"
+			}
+		,
+			"project_info": {
+			"project_number": "1041153372901",
+			"firebase_url": "https://keepinitfresh-4c8c1.firebaseio.com",
+			"project_id": "keepinitfresh-4c8c1",
+			"storage_bucket": "keepinitfresh-4c8c1.appspot.com"
+		},
+			"client": [
+			{
+			  "client_info": {
+				"mobilesdk_app_id": "1:1041153372901:android:ae7d8f399d5f5054b69a0c",
+				"android_client_info": {
+				  "package_name": "com.example.keepin_It_Fresh"
+				}
+			  },
+			  "oauth_client": [
+				{
+				  "client_id": "1041153372901-es3vtuk4glctu2fngr7r0pu2ds8t33cv.apps.googleusercontent.com",
+				  "client_type": 3
+				}
+			  ],
+			  "api_key": [
+				{
+				  "current_key": "AIzaSyCsCsokq1DOTCTIia2rHlX3zmxnv9VyAu0"
+				}
+			  ],
+			  "services": {
+				"appinvite_service": {
+				  "other_platform_oauth_client": [
+					{
+					  "client_id": "1041153372901-es3vtuk4glctu2fngr7r0pu2ds8t33cv.apps.googleusercontent.com",
+					  "client_type": 3
+					}
+				  ]
+				}
+			  }
+			}
+		  ],
+		  "configuration_version": "1"
+}

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="#FFFFFF"
+        tools:context=".EditScanner"
+        android:id="@+id/editfoodnotfoundnavdrawer">
+<LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="0.1" android:background="#545E5A"
+            android:gravity="center_vertical">
+        <ImageButton
+                android:src="@drawable/navdrawer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" android:id="@+id/nav_button" android:background="#0000"
+                android:layout_weight="0.2"/>
+        <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="0.8"/>
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="0.9">
+        <EditText
+                android:id="@+id/foodNameEditText"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="132dp"
+                android:layout_marginBottom="436dp"
+                android:ems="10"
+                android:hint="Name of Food"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/foodGrouplabel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="296dp"
+                android:gravity="right"
+                android:text="Food Group"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <Spinner
+                android:id="@+id/quantitySpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="132dp"
+                android:layout_marginBottom="396dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/foodTypelabel"
+                android:layout_width="44dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="248dp"
+                android:gravity="right"
+                android:text="Type"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/datePickerTextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="132dp"
+                android:layout_marginBottom="348dp"
+                android:text="Select Date"
+                android:textAlignment="gravity"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/foodNamelabel"
+                android:layout_width="53dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="448dp"
+                android:gravity="right"
+                android:text="Name"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/upcEdit"
+                android:layout_width="193dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="82dp"
+                android:ems="10"
+                android:hint="upc code"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.803"
+                app:layout_constraintStart_toEndOf="@+id/foodNamelabel2"
+                app:layout_constraintTop_toBottomOf="@+id/foodTypeSpinner"/>
+
+        <TextView
+                android:id="@+id/foodNamelabel2"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="188dp"
+                android:gravity="right"
+                android:text="UPC"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+                android:id="@+id/addFoodButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="152dp"
+                android:layout_marginBottom="120dp"
+                android:text="Add Food"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <Spinner
+                android:id="@+id/measurementSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="212dp"
+                android:layout_marginBottom="396dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <Spinner
+                android:id="@+id/foodGroupSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="132dp"
+                android:layout_marginBottom="296dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/foodExpirationlabel"
+                android:layout_width="83dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="348dp"
+                android:gravity="right"
+                android:text="Expiration"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <Spinner
+                android:id="@+id/foodTypeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="132dp"
+                android:layout_marginBottom="248dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/statusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="48dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/foodQuantitylabel"
+                android:layout_width="74dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="396dp"
+                android:gravity="right"
+                android:text="Quantity"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/messageItem"
+                android:layout_width="389dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="69dp"
+                android:gravity="center"
+                android:hint="ITEM FAILED"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.169"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="110dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/drawer_header"
+            app:menu="@menu/drawer_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

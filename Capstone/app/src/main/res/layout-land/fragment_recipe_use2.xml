@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal" android:id="@+id/use_recipe_root">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight=".1" android:background="#545E5A">
+        <ImageButton
+                android:src="@drawable/navdrawer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" android:id="@+id/nav_button" android:background="#0000"
+                android:layout_weight="0.2"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp" android:layout_weight="0.8"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" android:layout_weight="0.9">
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5sp"
+        >
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:translationY="20dp" android:padding="4sp">
+
+
+                <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:orientation="vertical" android:id="@+id/recipe_2_box_root">
+                    </LinearLayout>
+                </ScrollView>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" android:layout_weight="0.15"/>
+                    <Button
+                            android:layout_width="0dp"
+                            android:id="@+id/use_recipe_finish"
+                            android:layout_weight="0.7"
+                            android:text="Finish" android:layout_height="wrap_content"
+                            android:background="#A9D08D" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                    <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" android:layout_weight="0.15"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

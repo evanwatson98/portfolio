@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                           xmlns:app="http://schemas.android.com/apk/res-auto"
+                                           xmlns:tools="http://schemas.android.com/tools"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="match_parent"
+                                           android:id="@+id/foodaddnavnavdrawer">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" android:layout_weight="0.1" android:background="#545E5A"
+                android:gravity="center_vertical">
+            <ImageButton
+                    android:src="@drawable/navdrawer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/nav_button" android:background="#0000"
+                    android:layout_weight="0.2"/>
+            <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_weight="0.8"/>
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#A9D08D" android:layout_weight="0.9">
+
+            <TextView
+                    android:id="@+id/message3"
+                    android:layout_width="240dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="69dp"
+                    android:gravity="center"
+                    android:text="Option 2: User Add Food"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/scannerButton"/>
+
+            <TextView
+                    android:id="@+id/message12"
+                    android:layout_width="389dp"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="86dp"
+                    android:layout_marginEnd="69dp"
+                    android:gravity="center"
+                    android:text="Add Food to Shelf"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.253"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                    android:id="@+id/message2"
+                    android:layout_width="240dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="69dp"
+                    android:gravity="center"
+                    android:text="Option 1: Scan Add Food"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/message12"/>
+
+            <ImageButton
+                    android:id="@+id/scannerButton"
+                    android:layout_width="118dp"
+                    android:layout_height="104dp"
+                    android:layout_marginTop="17dp"
+                    android:adjustViewBounds="true"
+                    android:background="#0000"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/message2"
+                    app:srcCompat="@drawable/ic_camera_alt_black_24dp"/>
+
+            <Button
+                    android:id="@+id/manualButton"
+                    android:layout_width="183dp"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="21dp"
+                    android:background="#FFFFFF"
+                    android:text="Add Food Manually"
+                    android:textColor="#5C5C5C"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/message3"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

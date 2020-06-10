@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.keepin_It_Fresh">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <permission
+            android:name="com.app.appname.permission.C2D_MESSAGE"
+            android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.app.appname.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Keepin It Fresh"
+            android:hardwareAccelerated="false"
+            android:networkSecurityConfig="@xml/network_security_config"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".ForumPage">
+        </activity>
+
+        <service
+                android:name=".FirebaseMessager"
+                android:enabled="true"
+                android:exported="true"
+                android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+
+
+        <activity android:name=".AddFoodManually"/>
+
+        <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version"/>
+        <meta-data
+                android:name="com.google.android.gms.vision.DEPENDENCIES"
+                android:value="barcode"/>
+
+        <uses-library
+                android:name="org.apache.http.legacy"
+                android:required="false"/>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Scanner"/>
+        <activity android:name=".Register"/>
+        <activity android:name=".AssignHome"/>
+        <activity android:name=".RecipePage"/>
+        <activity android:name=".MainLogin"/>
+        <activity android:name=".ForgotPassword"/>
+        <activity android:name=".EditScannerFound"/>
+        <activity android:name=".EditScanner"/>
+        <activity android:name=".Shelf2"/>
+        <activity android:name=".Shelf"/>
+        <activity android:name=".GoogleProfile"/>
+        <activity android:name=".InsertUPC"/>
+        <activity android:name=".UserProfile"/>
+        <activity android:name=".ShelfFilter"/>
+        <activity android:name=".FoodAddNavigation"/>
+        <activity android:name=".AdvertiserForumPage"/>
+
+        <activity android:name=".onLoginCheck"/>
+        <activity android:name=".onLoginCheck2"/>
+        <activity android:name=".Link">
+            <intent-filter>
+                <data
+                        android:host="www.http://cgi.sice.indiana.edu/~jplazony/reset.php"
+                        android:scheme="http"/>
+                <data
+                        android:host="open.my.app"
+                        android:scheme="app"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                        android:host="cgi.sice.indiana.edu"
+                        android:pathPattern="/~jplazony/reset.php"
+                        android:scheme="http"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

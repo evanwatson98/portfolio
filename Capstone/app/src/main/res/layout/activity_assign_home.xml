@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="435dp"
+                android:layout_height="83dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/side_nav_bar"/>
+        <ImageView
+                android:id="@+id/skeletonLogo"
+                android:layout_width="69dp"
+                android:layout_height="65dp"
+                android:adjustViewBounds="true"
+                android:background="#0000"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.01"
+                app:srcCompat="@drawable/smallwhitelogo"/>
+
+        <EditText
+            android:id="@+id/joinHome"
+            android:layout_width="244dp"
+            android:layout_height="52dp"
+            android:background="#FFFDFD"
+            android:ems="10"
+            android:textColor="#82FF68"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.316" />
+
+        <EditText
+                android:id="@+id/createHome"
+                android:layout_width="244dp"
+                android:layout_height="52dp"
+                android:background="#FFFDFD"
+                android:ems="10"
+                android:textColor="#82FF68"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.443"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.698"/>
+
+        <TextView
+                android:id="@+id/textView2"
+                android:layout_width="214dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="96dp"
+                android:layout_marginLeft="96dp"
+                android:layout_marginTop="136dp"
+                android:text="Join A Home"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.188"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+                android:id="@+id/textView3"
+                android:layout_width="226dp"
+                android:layout_height="44dp"
+                android:layout_marginBottom="308dp"
+                android:text="Create A Home"
+                android:textColor="#000000"
+                android:textColorLink="#00000000"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+                android:id="@+id/submitCreate"
+                android:layout_width="115dp"
+                android:layout_height="52dp"
+                android:layout_marginBottom="124dp"
+                android:background="#FFFFFF"
+                android:text="Create"
+                android:textColor="#82FF68"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.435"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:id="@+id/submitJoin"
+            android:layout_width="122dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="312dp"
+            android:background="#FEFFFE"
+            android:text="Join"
+            android:textColor="#82FF68"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="112dp"
+                android:background="#FDFCFC"
+                android:text="Help ?"
+                android:textColor="#2196F3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/textView15"
+                android:layout_width="127dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="256dp"
+                android:text="Home Name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.299"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/textView24"
+                android:layout_width="112dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="188dp"
+                android:text="Token"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.284"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+                android:id="@+id/bottomJoin"
+                android:layout_width="435dp"
+                android:layout_height="83dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.99"
+                app:srcCompat="@drawable/side_nav_bar"/>
+
+        <TextView
+            android:id="@+id/joinHomeError"
+            android:layout_width="231dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#FA2020"
+            app:layout_constraintBottom_toTopOf="@+id/submitJoin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/joinHome" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+

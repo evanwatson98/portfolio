@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:orientation="vertical"
+>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" android:layout_gravity="center_vertical" android:gravity="center_vertical">
+        <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="0.05"/>
+        <TextView
+                android:id="@+id/recipe_container_textview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.85" android:textColor="#FFFFFF" android:textStyle="bold"
+                android:textSize="18sp"/>
+        <ImageButton
+                android:id="@+id/recipe_toggle_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_more" android:background="#0000" android:layout_weight="0.1"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/expanded_recipe_box" android:visibility="gone"
+            android:outlineProvider="paddedBounds">
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/back"
+                    android:id="@+id/recipe_image_main" android:adjustViewBounds="true" android:padding="20dp"/>
+        </FrameLayout>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/instructions_textview_recipe_box"
+                android:padding="25dp" android:gravity="top|left"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_weight="0.6"/>
+            <FrameLayout
+                    android:layout_width="0.dp"
+                    android:layout_height="wrap_content" android:layout_weight="0.4" android:padding="16dp">
+
+                <Button
+                        android:text="Use"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/use_button"
+                        android:background="#545E5A" android:textStyle="bold" android:textColor="#FFFFFF"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+        <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="0.05"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textView26" android:layout_weight="0.9"
+                android:background="#545E5A"/>
+        <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="0.05"/>
+    </LinearLayout>
+
+</LinearLayout>

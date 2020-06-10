@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="0.1" android:background="#545E5A"
+        android:gravity="center_vertical">
+        <ImageButton
+            android:src="@drawable/navdrawer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" android:id="@+id/nav_button" android:background="#0000"
+            android:layout_weight="0.2"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="0.8"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="252dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="5dp"
+        android:text="Fresh Kitchen: Under the Sea"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="407dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="407dp"
+            android:layout_height="160dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/forumfreshkickenbackground" />
+
+
+        <LinearLayout
+            android:id="@+id/kitchenPicLayout"
+            android:layout_width="149dp"
+            android:layout_height="138dp"
+            android:layout_marginStart="4dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+        <TextView
+            android:id="@+id/kitchenTime"
+            android:layout_width="179dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="21dp"
+            app:layout_constraintBottom_toTopOf="@+id/kitchenDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/kitchenPicLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/kitchenDescription"
+            android:layout_width="205dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/kitchenPicLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.807" />
+
+        <ImageButton
+            android:id="@+id/rightArrow"
+            android:layout_width="25dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="16dp"
+            android:adjustViewBounds="true"
+            android:background="#0000"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.24"
+            app:srcCompat="@drawable/rightarrow" />
+
+        <ImageButton
+            android:id="@+id/leftArrow"
+            android:layout_width="25dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="16dp"
+            android:adjustViewBounds="true"
+            android:background="#0000"
+            android:scaleType="fitCenter"
+            android:scaleX="-1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.24"
+            app:srcCompat="@drawable/rightarrow" />
+
+        <TextView
+            android:id="@+id/forumTitle"
+            android:layout_width="177dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/kitchenTime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/kitchenPicLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/shelfScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".15">
+
+    </ScrollView>
+
+
+</LinearLayout>
