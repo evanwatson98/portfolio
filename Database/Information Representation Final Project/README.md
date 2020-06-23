@@ -5,7 +5,7 @@ For this classes final project we were tasked with creating an ERD and developin
 ![](IS_Final_Project_ERD.jpeg) 
 ## QUERIES USED:
 
-### 1b) Produce a class roster for a *specified section* sorted by student’s last name, first name. At the end, include the average grade (GPA for the class.) (10 points): 
+### 1b) Produce a class roster for a *specified section* sorted by student’s last name, first name. At the end, include the average grade (GPA for the class.): 
 
 SELECT DISTINCT CONCAT(Student.last_name, '  ',Student.first_name) AS name, ROUND(AVG(Grade.GPA),2) AS GPA
 FROM Section, Student, Section_Enroll, Grade
@@ -13,7 +13,7 @@ WHERE Section.sectionID = Section_Enroll.sectionID AND Student.studentID = Secti
 GROUP BY name, Section_Enroll.grade WITH ROLLUP; 
 
 
-### 3b) Produce a list of faculty who have never taught a *specified course* [Dropdown](10 points):
+### 3b) Produce a list of faculty who have never taught a *specified course* [Dropdown]:
 
 SELECT CONCAT(Faculty.name_first, ' ', Faculty.name_middle, ' ', Faculty.name_last) AS Name
 FROM Faculty
@@ -23,7 +23,7 @@ FROM Scheduled
 WHERE Faculty.facultyID = Scheduled.facultyID AND
 	Scheduled.courseID = 'BUS-E');
 
-### 5b) Produce a chronological list of all courses taken by a *specified student*. Show grades earned. Include overall hours taken and GPA at the end. (10 points): 
+### 5b) Produce a chronological list of all courses taken by a *specified student*. Show grades earned. Include overall hours taken and GPA at the end.: 
 
 
 SELECT DISTINCT c.courseID, c.course_num, g.grade, c.credit_hours, g.GPA AS GPA
@@ -36,7 +36,7 @@ WHERE Section_Enroll.sectionID = Section.sectionID AND Section_Enroll.grade = Gr
 
 
 
-### 6c) Produce a list of students and faculty who were in a *particular building* at a *particular time*. Also include in the list faculty and advisors who have offices in that building. (15 points):
+### 6c) Produce a list of students and faculty who were in a *particular building* at a *particular time*. Also include in the list faculty and advisors who have offices in that building.:
 
 SELECT DISTINCT CONCAT(Faculty.name_first,' ', Faculty.name_last) AS faculty_name, 
 	CONCAT(Student.first_name, ' ', Student.last_name) AS student_name, 
@@ -55,7 +55,7 @@ CONCAT(Staff.first_name, ' ', Staff.last_name) AS staff_name
 FROM Section, Faculty, Building, Room, Staff
 WHERE Faculty.roomID = Room.roomID AND Room.address = Building.address AND Staff.roomID = Room.roomID AND Building.address = '20925 Bashford Trail';
 
-### 7a) Produce an alphabetical list of students with their majors who are advised by a *specified advisor*. (5 points): 
+### 7a) Produce an alphabetical list of students with their majors who are advised by a *specified advisor*.: 
 
 SELECT CONCAT(Student.first_name, ' ', Student.middle_name, ' ',Student.last_name) AS name, Major.majorID
 FROM Student, Major, Staff, Student_Major, Staff_Students
