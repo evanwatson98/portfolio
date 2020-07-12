@@ -11,9 +11,9 @@ The goal of this repository is to give access to potential employers Evan Watson
 | :-------------: |
 | Keepin' it Fresh |
 
-## Team Information
+## Projects
 
-| Item        | Value           |
+| Item |
 | ------------- |:-------------:|
 | Team Name | Keepin' it Fresh |
 | Platform | Android |
