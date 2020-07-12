@@ -3,17 +3,18 @@
 The goal of this repository is to give access to potential employers Evan Watson's portfolio. Which includes both individual and group projects that he has accomplished.
 
 # Projects
-| Item        | Value           |
-| :-------------: |
-| IU Database Final Project |
-| Movie Theater GUI |
-| Still in Progress | Android |
-| :-------------: |
-| Keepin' it Fresh |
+|        | Completed           |
+| ------------- |:-------------:|
+| 1. | IU Database Final Project |
+| 2. | Movie Theater GUI |
+| 3. | Still in Progress | Android |
+|         | In Development           |
+| ------------- |:-------------:|
+| 1. | Keepin' it Fresh |
 
 ## Projects
 
-| Item |
+| No        |     Title       |
 | ------------- |:-------------:|
 | Team Name | Keepin' it Fresh |
 | Platform | Android |
