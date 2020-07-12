@@ -4,9 +4,9 @@ The goal of this repository is to give access to potential employers Evan Watson
 
 # Projects
 | Item        | Value           |
-| ------------- |
+| :-------------: |
 | IU Database Final Project |
 | Movie Theater GUI |
 | Still in Progress | Android |
-| ------------- |
+| :-------------: |
 | Keepin' it Fresh |
