@@ -1,4 +1,4 @@
-<img src="Resources/Images/smallwhitelogo.png" alt="drawing" width="200"/>
+<img src="app/src/main/res/drawable/smallwhitelogo.png" alt="drawing" width="200"/>
 
 # Keepin' it Fresh
 This repository is for the current development of the food management app Keepin' it Fresh.
