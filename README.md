@@ -8,5 +8,4 @@ The goal of this repository is to give access to potential employers Evan Watson
 | 1. | IU Database Final Project |
 | 2. | Movie Theater GUI |
 |        | In Development |
-| ------------- |:-------------:|
 | 1. | Keepin' it Fresh |
