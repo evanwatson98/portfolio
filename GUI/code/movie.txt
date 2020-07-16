@@ -1,0 +1,10 @@
+Avengers Endgame,Action,2019,182,PG-13
+Aquaman,Fantasy/Science Fiction,2018,142,PG-13
+Shazam!,Fantasy/Science Fiction,2019,132,PG-13
+Captain Marvel,Fantasy/Science Fiction,2019,125,PG-13
+Dumbo,Live Action,2019,112,PG
+How to Train your Dragon,Animation,2019,98,PG
+Pet Sematary,Horror,2019,103,R
+Us,Horror,2019,121,R
+Spiderman: Into the Spider-verse,Fantasy/Science Fiction,2019,116,PG
+
