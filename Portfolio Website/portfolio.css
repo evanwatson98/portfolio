@@ -1,0 +1,388 @@
+BODY{
+    background-color: #091921;
+}
+
+.headshotContainer {
+    width: 100%;
+}
+
+.bioContainer{
+    background-color: white;
+    display: inline-block;
+}
+
+/* .bioImageContainer{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+} */
+
+.headshotContainer{
+    width: 25%;
+}
+
+.bioTextContainer {
+}
+
+.bioText{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p {
+    font-weight: 100;
+    font-family: "optima";
+}
+
+.clockBackground {
+    background-color: #091921;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.clock {
+    background: #091921;
+    width: 350px;
+    height:350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url(clock.png); */
+    background-size: cover;
+    border: 4px solid #091921;
+    border-radius: 50%;
+    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 15px 15px rgba(0,0,0,0.3),
+                inset 0 15px 15px rgba(0,0,0,0.3);
+}
+
+.clock:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec {
+    position: absolute;
+}
+
+.clock .hour .hr,
+.clock .min .mn,
+.clock .sec .sc{
+    z-index: 20;
+}
+
+.clock .hour .hrFill{
+    width: 80px;
+    height: 80px;
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background:#091921;
+    z-index: 5;
+}
+
+.clock .min .mnFill{
+    width: 80px;
+    height: 80px;
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 100px;
+    background:#091921;
+    z-index: 10;
+
+}
+
+.clock .sec .scFill{
+    width: 80px;
+    height: 80px;
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 140px;
+    background:#091921;
+    z-index: 15;
+
+}
+.clock .hour {
+    width: 160px;
+    height: 160px;
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 160px;
+    background:#ff105e;
+    border-radius: 6px 6px 0 0;
+    animation:animated_div 6s;
+    animation-iteration-count: infinite;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+@keyframes animated_div
+{
+    0% {transform: rotate(-360deg);}
+}
+
+.clock .min {
+    width: 190px;
+    height: 190px;
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 200px;
+    background:#fff;
+    border-radius: 6px 6px 0 0;
+    animation:animated_div 1s;
+    animation-iteration-count: infinite;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+.clock .sec {
+    width: 230px;
+    height: 230px;
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 280px;
+    background:#fff;
+    border-radius: 6px 6px 0 0;
+    animation:animated_div .5s;
+    /* -moz-animation:animated_div 2s 1;
+    -webkit-animation:animated_div 1s 1;
+    -o-animation:animated_div 1s 1; */
+    animation-iteration-count: infinite;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+.portfolioTag{
+    position: absolute;
+    top:120%;
+    width: 40%;
+    height: 62px;
+    background:#ffe9a6;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    color: red;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.storyContainer{
+    width: 96%;
+    height: 1200px;
+    position: absolute;
+    top:130%;
+    background-color: #ffe9a6;
+}
+
+.projectCard1{
+    font-family: sans-serif;
+    width: 40%;
+    height: 40%;
+    top:25%;
+    left:25%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-image: url("smallwhitelogo.png");
+    background-size: cover;
+
+}
+
+.projectCard2{
+    font-family: sans-serif;
+    width: 40%;
+    height: 40%;
+    top:25%;
+    left:75%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-image: url("IS_Final_Project_ERD.jpeg");
+    background-size: cover;
+
+}
+
+.projectCard3{
+    font-family: sans-serif;
+    width: 40%;
+    height: 40%;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-image: url("movieTheaterGUI.png");
+    background-size: cover;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    text-align: center;
+}
+
+.transparentBackground{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    background-color: white;
+}
+  
+.projectCard1:hover .transparentBackground{
+    opacity: 1;
+}
+
+.projectCard1:hover .overlay{
+    opacity: 1;
+}
+
+.projectCard1:hover .projectImage {
+    opacity: .3;
+}
+
+.projectCard2:hover .transparentBackground{
+    opacity: 1;
+}
+
+.projectCard2:hover .overlay{
+    opacity: 1;
+}
+
+.projectCard2:hover .projectImage {
+    opacity: .3;
+}
+
+.projectCard3:hover .transparentBackground{
+    opacity: 1;
+}
+
+.projectCard3:hover .overlay{
+    opacity: 1;
+}
+
+.projectCard3:hover .projectImage {
+    opacity: .3;
+}
+
+.cardFrontContainer {
+    height: 500px;
+}
+
+#rec1 {
+    animation: rec1 3s 1;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes rec1{
+    /* 0%{left:200px; top:200px; transform: rotate(1deg)} */
+    /* 25%{transform: rotate(-360deg)} */
+    /* 50%{transform: rotate(-40deg)}
+    75%{transform: rotate(-80deg)}
+    100%{transform: rotate(-160deg)} */
+}
+
+.businessCardFrontContainer {
+    width:100%;
+    height: 380px;
+    background-color: red;
+    position: relative;
+}
+
+.diagonalWhiteSq {
+    width:20%;
+    height:60%;
+    background-color: white;
+}
+
+.verticalWhiteSq {
+    width:3%;
+    height:60%;
+    background-color: white;
+}
+
+.horizontalWhiteSq {
+    width:20%;
+    height:6%;
+    background-color: white;
+}
+
+#square1 {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+
+    animation: sq1 3s 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes sq1{
+    /* 0%{left:40%; transform: rotate(50deg)} */
+    from {left: 40%;}
+    to {left: 30%; top: 65%;transform: rotate(-90deg)}
+    /* 25%{transform: rotate(-360deg)} */
+    /* 50%{transform: rotate(-40deg)}
+    75%{transform: rotate(-80deg)}*/
+    /* 100%{transform: rotate(-180deg)} */
+}
+
+
+#square2 {
+    position: absolute;
+    left: 60%;
+    top: 40%;
+}
+
+#square3 {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+
+#square4 {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+
+    /* -webkit-clip-path: polygon(488.2,22.6 504,8 635.2,134 619.4,148.6); */
+    clip-path: polygon(100% 0%, 100% 17%, 0% 100%, 0% 83%);
+}
+#square5 {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    clip-path: polygon(0 17%, 0% 0%, 100% 83%, 100% 100%);
+
+}
