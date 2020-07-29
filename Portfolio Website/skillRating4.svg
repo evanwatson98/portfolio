@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 572 111" style="enable-background:new 0 0 572 111;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#48E5FF;}
+	.st1{fill:none;}
+	.st2{fill:#FF9700;}
+	.st3{font-family:'ArialRoundedMTBold';}
+	.st4{font-size:50px;}
+</style>
+<g>
+	<path class="st0" d="M569,73v19H3V73H569 M572,70H0v25h572V70L572,70z"/>
+</g>
+<rect x="45.9" y="0.3" class="st1" width="32.1" height="36.7"/>
+<text transform="matrix(1 0 0 1 45.8989 36.7026)" class="st2 st3 st4">1</text>
+<rect x="175.56" y="0.04" class="st1" width="32.1" height="36.7"/>
+<text transform="matrix(1 0 0 1 175.5632 36.4441)" class="st2 st3 st4">2</text>
+<rect x="295.56" y="0.04" class="st1" width="32.1" height="36.7"/>
+<text transform="matrix(1 0 0 1 295.5632 36.4441)" class="st2 st3 st4">3</text>
+<rect x="414.56" y="0.04" class="st1" width="32.1" height="36.7"/>
+<text transform="matrix(1 0 0 1 414.5632 36.4441)" class="st2 st3 st4">4</text>
+<rect x="530.56" y="0.04" class="st1" width="32.1" height="36.7"/>
+<text transform="matrix(1 0 0 1 530.5632 36.4441)" class="st2 st3 st4">5</text>
+<circle class="st2" cx="431" cy="86" r="25"/>
+<rect x="3" y="73" class="st2" width="423" height="19"/>
+</svg>

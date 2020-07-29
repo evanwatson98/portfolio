@@ -1,6 +1,42 @@
 BODY{
-    background-color: #091921;
+    background-image: url("background.svg");
+    background-repeat: repeat-y;
+    background-size: 100% auto;
 }
+p{
+    font-family: 'Tangerine', serif;
+    font-size: 20px;
+}
+
+.skillBox{
+    width: 100%;
+    height: 100px;
+}
+.languagesSection{
+    width: 50%;
+}
+
+.skillBar{
+    height: 30px;
+    width: 40%;
+    border-style: solid;
+    border-color: #48E5FF;}
+
+.circle1{
+    width: 5%;
+    height: 150%;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #48E5FF;
+    background-color: white;
+}
+
+.skillImg{
+    width: 50%;
+}
+
+.resumeBox{
+    border-bottom: 1px solid #dbdbdb;}
 
 .circle {
     width: 100%;
@@ -8,6 +44,11 @@ BODY{
     border-radius: 50%;
     overflow: hidden;
     text-align: center;
+  }
+  .resumeContainer{
+      width: 80%;
+      height: 3000px;
+      background-color: white;
   }
   
   .circle:before {
@@ -54,7 +95,14 @@ BODY{
     background-color: white;
     border-radius: 10%;
     position: fixed;
+    box-shadow: 5px 10px 8px 10px #888888;
 
+}
+
+.bioBuffer{
+    width: 300px;
+    height: 100%;
+    background-color: transparent;
 }
 
 .imageLinks{
@@ -237,9 +285,7 @@ p {
 .storyContainer{
     width: 96%;
     height: 1200px;
-    position: absolute;
-    top:130%;
-    background-color: #ffe9a6;
+    position: relative;
 }
 
 .projectCard1{
