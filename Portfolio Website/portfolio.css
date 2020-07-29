@@ -2,13 +2,65 @@ BODY{
     background-color: #091921;
 }
 
+.circle {
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .circle:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
+    
+  }
+  
+  .circle>img {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX( -50%);
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity .4s;
+  }
+  
+  .circle>img.tallAndNarrow {
+    width: 100%;
+    top: 50%;
+    transform: translateX(0) translateY( -50%);
+    left: 0;
+    height: auto;
+  }
+  
+  .circle>img.loaded {
+    opacity: 1;
+  }
+
 .headshotContainer {
     width: 100%;
 }
 
 .bioContainer{
-    background-color: white;
     display: inline-block;
+    width: 250px;
+    height: auto;
+    background-color: white;
+    border-radius: 10%;
+    position: fixed;
+
+}
+
+.imageLinks{
+    height: 70px; 
+    border-radius: 10%;
+    
 }
 
 /* .bioImageContainer{
@@ -20,7 +72,6 @@ BODY{
 } */
 
 .headshotContainer{
-    width: 25%;
 }
 
 .bioTextContainer {
@@ -222,12 +273,24 @@ p {
     width: 40%;
     height: 40%;
     top:70%;
-    left:50%;
+    left:25%;
     transform: translate(-50%, -50%);
     position: absolute;
     background-image: url("movieTheaterGUI.png");
     background-size: cover;
 
+}
+
+.projectCard4{
+    font-family: sans-serif;
+    width: 40%;
+    height: 40%;
+    top:70%;
+    left:75%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-image: url("domusFull.png");
+    background-size: cover;
 }
 
 .overlay {
@@ -239,8 +302,8 @@ p {
     height: 100%;
     width: 100%;
     transition: .5s ease;
-    opacity: 0;
-    text-align: center;
+opacity: 0;
+text-align: center;
 }
 
 .transparentBackground{
@@ -289,6 +352,18 @@ p {
 }
 
 .projectCard3:hover .projectImage {
+    opacity: .3;
+}
+
+.projectCard4:hover .transparentBackground{
+    opacity: 1;
+}
+
+.projectCard4:hover .overlay{
+    opacity: 1;
+}
+
+.projectCard4:hover .projectImage {
     opacity: .3;
 }
 
