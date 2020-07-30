@@ -403,6 +403,11 @@ text-align: center;
 
 }
 
+.iuTri{
+		width: 10%;
+		height: auto;
+	}
+
 
 
 
@@ -442,8 +447,9 @@ text-align: center;
 	.bioBuffer{
 		display: none;
 	}
-	iuTri{
-		width: 100px;
+	.iuTri{
+		width: 5%;
+		height: 5px;
 	}
 	
 }
