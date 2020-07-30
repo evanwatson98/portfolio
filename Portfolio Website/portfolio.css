@@ -8,6 +8,26 @@ p{
     font-size: 20px;
 }
 
+.intro{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 4000px;
+    background-color: white;
+    animation-name: intro;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes intro {
+    from {top: 0px;}
+    to {left:-100%; top:0px;}
+  }
+
 .skillBox{
     width: 100%;
     height: 100px;
@@ -290,25 +310,25 @@ p {
 
 .projectCard1{
     font-family: sans-serif;
-    width: 40%;
-    height: 40%;
-    top:25%;
-    left:25%;
+    width: 80%;
+    height: 80%;
+    top: 240px;
+    left: 440px;
     transform: translate(-50%, -50%);
     position: absolute;
     background-image: url("smallwhitelogo.png");
-    background-size: cover;
+    background-size: 300px;
 
 }
 
 .projectCard2{
     font-family: sans-serif;
-    width: 40%;
-    height: 40%;
-    top:25%;
-    left:75%;
-    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
     position: absolute;
+    top: 240px;
+    left: 440px;
+    transform: translate(-50%, -50%);
     background-image: url("IS_Final_Project_ERD.jpeg");
     background-size: cover;
 
@@ -316,12 +336,12 @@ p {
 
 .projectCard3{
     font-family: sans-serif;
-    width: 40%;
-    height: 40%;
-    top:70%;
-    left:25%;
-    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
     position: absolute;
+    top: 240px;
+    left: 440px;
+    transform: translate(-50%, -50%);
     background-image: url("movieTheaterGUI.png");
     background-size: cover;
 
@@ -329,20 +349,20 @@ p {
 
 .projectCard4{
     font-family: sans-serif;
-    width: 40%;
-    height: 40%;
-    top:70%;
-    left:75%;
-    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
     position: absolute;
+    top: 240px;
+    left: 440px;
+    transform: translate(-50%, -50%);
     background-image: url("domusFull.png");
     background-size: cover;
 }
 
 .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50px;
+    left: 50px;
     bottom: 0;
     right: 0;
     height: 100%;
