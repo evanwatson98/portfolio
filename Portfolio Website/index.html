@@ -26,37 +26,56 @@
 
   <body class="">
 	  
-	  
+<!--	  GLOBAL-->
 	<div class="nav-bar d-flex p-3" style="position: relative;">
 		<a href="home.html">
-			<img src="ew.svg" style="width: 50%; position: relative;" class="pl-4">
+			<div class="webNav pl-4 nav-link" style="width: 100%;">
+				<img src="ew.svg" style="width: 40%; position: relative;" class="pl-4">
+			</div>
 		</a>
 		
-		<div style="width: .25%; height: 100%; background-color: white;"></div>
+		<div class="nav-line webNav" style="width: .25%; height: 100%; background-color: white;"></div>
 		
 		<a href="home.html" style="text-decoration: none">
-			<div class="pl-4" style="width: 50%;">
+			<div class="webNav pl-4 nav-link" style="width: 100%;">
 				<p style="color: white; position: relative; font-size: xx-large;">Home</p>
 			</div>
 	  	</a>
 		
 		<a href="index.html" style="text-decoration: none">
-			<div class="pl-4" style="width: 50%;">
+			<div class="webNav pl-4 nav-link" style="width: 100%;">
 				<p style="color: white; position: relative; font-size: xx-large;">Discover</p>
 			</div>
 	  	</a>
 		
 		<a href="index.html" style="text-decoration: none">
-			<p class="pl-4" style="color: white; position: relative; font-size: xx-large;">Hire</p>
+			<div class="webNav pl-4 nav-link" style="width: 50%;">
+				<p class="pl-4" style="color: white; position: relative; font-size: xx-large;">Hire</p>
+			</div>
 	  	</a>
 		
 		<a href="home.html" style="text-decoration: none">
-			<div class="pl-4" style="width: 50%;">
+			<div class="webNav pl-4 nav-link" style="width: 50%;">
 				<p style="color: white; position: relative; font-size: xx-large;">Blog</p>
 			</div>
 	  	</a>
+		
+		<!--	  Phones-->
+	  
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="#">Home</a>
+		  <a href="#">Discover</a>
+		  <a href="#">Hire</a>
+		  <a href="#">Blog</a>
+		</div>
+		
+		<div id="main">
+		  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+		</div>
 
-	  </div>  
+	  </div>
+	 
 	  
 	<div class="bodyContainer p-4 d-flex">
 		<div class="bioContainer p-3">
