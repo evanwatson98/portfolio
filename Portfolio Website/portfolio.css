@@ -14,6 +14,74 @@ p{
     font-family: 'Tangerine', serif;
     font-size: 20px;
 }
+.formContainer{
+	background-color: white;
+	width: 80%;
+}
+.inputBox{
+border-bottom-style: solid;
+	border-bottom-color: orange;
+	border-width: thin;
+	width: 45%;
+}
+
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+
+.formBuffer{
+	width:10%;
+}
+#fname{
+		border: none;
+	width: 100%;
+
+}
+
+#lname{
+		border: none;
+	width: 100%;
+
+}
+
+#email{
+		border: none;
+	width: 100%;
+
+}
+
+#phone{
+		border: none;
+	width: 100%;
+
+}
+#company{
+	border: none;
+	width: 100%;
+
+}
+
+#jobTitle{
+	border: none;
+	width: 100%;
+
+}
+
+#jobDescription{
+	width: 100%;
+	height: 500px;
+
+}
+
+#skills{
+	border: none;
+	width: 100%;
+
+}
+
+.jobContainer{
+	border: medium #000000;
+}
 
 /*
 .intro{

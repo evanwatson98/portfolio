@@ -27,7 +27,7 @@
   <body class="">
 <!--	  GLOBAL-->
 	<div class="nav-bar d-flex p-3" style="position: relative;">
-		<a href="home.html">
+		<a href="index.html">
 			<div class="webNav pl-4 nav-link" style="width: 100%;">
 				<img src="ew.svg" style="width: 40%; position: relative;" class="pl-4">
 			</div>
@@ -35,11 +35,13 @@
 		
 		<div class="nav-line webNav" style="width: .25%; height: 100%; background-color: white;"></div>
 		
+<!--
 		<a href="home.html" style="text-decoration: none">
 			<div class="webNav pl-4 nav-link" style="width: 100%;">
 				<p style="color: white; position: relative; font-size: xx-large;">Home</p>
 			</div>
 	  	</a>
+-->
 		
 		<a href="index.html" style="text-decoration: none">
 			<div class="webNav pl-4 nav-link" style="width: 100%;">
@@ -53,29 +55,86 @@
 			</div>
 	  	</a>
 		
+<!--
 		<a href="blog.html" style="text-decoration: none">
 			<div class="webNav pl-4 nav-link" style="width: 50%;">
 				<p style="color: white; position: relative; font-size: xx-large;">Blog</p>
 			</div>
 	  	</a>
+-->
 		
 		<!--	  Phones-->
 	  
 		<div id="mySidenav" class="sidenav">
 		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		  <a href="#">Home</a>
-		  <a href="#">Discover</a>
-		  <a href="#">Hire</a>
-		  <a href="#">Blog</a>
+<!--		  <a href="#">Home</a>-->
+		  <a href="index.html">Discover</a>
+		  <a href="hire.html">Hire</a>
+<!--		  <a href="#">Blog</a>-->
 		</div>
 		
 		<div id="main">
 		  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 		</div>
 		
-		<img src="ew.svg" class="phoneLogo">
+		<img src="ew.svg" class="phoneLogo">		
 
-	  </div>	  
+	  </div>
+	  
+<!--	  		<p>Thank you for thinking about hiring me(Evan Watson). I promise to exceed any of your expectations and I am looking forward to meeting you. Pleasae fill out the form below and I will get back to you as soon as possible!</p>-->
+	  	
+	 <div class="formFull d-flex justify-content-center" style="width: 100%">
+	  <div class="formContainer p-3">
+		  
+		  <form action="/action_page.php">
+			  <h2 style="color: orange;">Contact</h2>
+			  <div class="d-flex">
+				  <div class="inputBox">
+					  <input type="text" id="fname" name="fname"  placeholder="First name">
+				  </div><p>*</p>
+				  <div class="formBuffer"></div>
+				  
+				  <div class="inputBox pl-3">
+					  <input type="text" id="lname" name="lname"  placeholder="Last name">
+				  </div>
+				  <p>*</p>
+			  </div>
+			  <br><br>
+			  <div class="d-flex">
+				  <div class="inputBox">
+					  <input type="email" id="email" name="email"  placeholder="email">
+				  </div>
+					  <p>*</p>
+				  	<div class="formBuffer"></div>
+
+				  <div class="inputBox">
+				<input type="tel" id="phone" name="phone"  placeholder="phone">
+			  </div>
+			  </div>
+			  
+			  <br><br>
+			  
+			  <h2 style="color: orange;">Job</h2>
+
+			  
+			  <div class="jobContainer">
+			<div class="inputBox">
+			  <input type="text" id="company" name="company"  placeholder="Company"><br>
+				</div>
+			  <input type="text" id="jobTitle" name="jobTitle"  placeholder="Job Title"><br><br>
+			<p>Job Description</p>
+				  <textarea type="text" id="jobDescription" name="jobDescription"></textarea><br><br>
+			  <input type="text" id="skills" name="skills"  placeholder="skills"><br><br>
+				  </div>
+
+			  
+
+			  <input type="submit" value="Submit">
+		</form>
+
+	  </div>
+		 </div>
+
 	  <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
