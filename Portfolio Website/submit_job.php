@@ -80,25 +80,57 @@
 
 	  </div>
 
-
-
+	  <div class="confirmBody d-flex justify-content-center">
+		  
+	</div>
+	<div class="d-flex justify-content-center" style="width:100%;">
 	<?php
-	// $con = mysqli_connect("db.sice.indiana.edu","i494f19_team39","my+sql=i494f19_team39","i494f19_team39");
-		// 	if(mysqli_connect_errno())
-	// 	{echo nl2br("Failed to connect to MySQL: " . mysqli_connect_connect_error() . "\n");}
-
+		$servername = "localhost";
+		$username = "root";
+		$password = "buildmyportfolio324";
+		$db = "hire";
+		// Create connection
+		$con = mysqli_connect($servername, $username, $password,$db);
+		if(!$con)
+		{echo nl2br("Failed to connect to MySQL: " . mysqli_connect_connect_error() . "\n");}
 		$fname = $_POST['fname'];
-		echo 'Hello ' . htmlspecialchars($_POST["fname"]) . htmlspecialchars($_POST["lname"]) . '!';
+		$lname = $_POST['lname'];
+		$email = $_POST['email'];
+		$phone = $_POST['phone'];
+		$company = $_POST['company'];
+		$jobTitle = $_POST['jobTitle'];
+		$jobDescription = $_POST['jobDescription'];
+		$skills = $_POST['skills'];
+		$allSkills - $_POST['allSkills'];
+
+		echo $allSkills;
+
+		$mysql1 = "INSERT INTO jobs(title,description, skills) VALUES( '$jobTitle', '$jobDescription', '$skills')";
+		$mysql2 = "INSERT INTO employers(fname,lname, company, email, phone) VALUES('$fname', '$lname', '$company', '$email', '$phone')";
+
+		if (mysqli_query($con, $mysql1)){
+			if (mysqli_query($con, $mysql2)){}
+			Else
+			{ die('SQL Error 2: ' . mysqli_error($mysql2) ); }
+		}Else
+		{ die('SQL Error 1: ' . mysqli_error($mysql1) ); }
+
+		echo '<div class="thanks"style="color: blue; font-size: 30px; font-wight:bold;"> Thank You '. $fname ." " . $lname . "</div>";
 	// $sansection = htmlspecialchars(mysqli_real_escape_string($conn, $_POST['fname']));
-	// mysqli_close($con);
+	mysqli_close($con);
 	?>
-
-
-
-
-	  <div style="background-color: white;">
-	  	<img src="handshakeColor.svg">
 	</div>
 
+
+
+
+	  <div class="d-flex justify-content-center" style="background-color: white; width:100%;">
+	  	<img src="handshakeColor.svg" style="width: 60%;">
+	</div>
+
+	<div class="d-flex justify-content-center" style="width:100%;">
+		<div class="shortly" style="color: orange; font-size: 30px; font-wight:bold;"> I will be in touch with you shortly </div>
+	</div>
+	<script src="portfolio.js"></script>
 	</body>
 </html>

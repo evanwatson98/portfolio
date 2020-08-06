@@ -25,11 +25,16 @@ function del_parent(e){
 	e.parentElement.remove();
 }
 
+
+// Used in add_skills
 var ct = 0;
+var skillsArr = [];
+//
 function add_skill(e){
 	var rand_colors = ['#75DDEB', '#AEE6B6', '#FF3600', '#F061F2', '#908CFF'];
 	if(e && e.keyCode === 32 || e.keyCode === 13){
 		var test = document.getElementById("skills").value;
+		skillsArr.push(test);
 		
 		var bubbleSkillWrapper = document.createElement('div');
 		bubbleSkillWrapper.className ='d-flex';
@@ -68,4 +73,18 @@ $('form input').keydown(function (e) {
     }
 });
 
+function postSkill(e){
+	$.ajax({
+		type : "POST", 
+		url  : "submit_job.php",  
+		data : { allSkills : skillsArr},
+		success: function(res){  
+								//do what you want here...
+				}
+	});
+}
+
+
 document.getElementById("skills").addEventListener("keyup", add_skill);
+document.getElementById("submitJob").addEventListener("keyup", postSkill);
+
