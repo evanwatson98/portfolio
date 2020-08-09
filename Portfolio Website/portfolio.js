@@ -21,13 +21,9 @@ function closeNav() {
   document.body.style.backgroundColor = "white";
 }
 
-function del_parent(e){
-	e.parentElement.remove();
-}
-
-
 // Used in add_skills
 var ct = 0;
+var realct=1;
 var skillsArr = [];
 //
 function add_skill(e){
@@ -39,8 +35,7 @@ function add_skill(e){
 		var bubbleSkillWrapper = document.createElement('div');
 		bubbleSkillWrapper.className ='d-flex';
 
-		var bubbleSkill = document.createElement('div');
-		bubbleSkill.className ='bubbleSkill';
+		var bubbleSkill = document.getElementById('bubbleSkill'+ realct);
 		
 		var del = document.createElement('div');
 		del.className ='del';
@@ -58,11 +53,15 @@ function add_skill(e){
 		if(ct == 5){
 			ct=0;
 		}
-		console.log(ct);
+		// document.getElementById("del"+realct).addEventListener("click", del_parent("del"+realct));
+		realct++;
 		
-		document.getElementById("del").addEventListener("click", del_parent);
-
    }
+}
+
+function del_parent(divID){
+	var del = document.getElementById(divID);
+	del.parentElement.remove(del);
 }
 
 
@@ -87,4 +86,11 @@ function postSkill(e){
 
 document.getElementById("skills").addEventListener("keyup", add_skill);
 document.getElementById("submitJob").addEventListener("keyup", postSkill);
+var c = 1;
+// while(c < 10){
+// 	console.log(c,"bubbleSkill"+c)
+// 	document.getElementById("bubbleSkill"+c).addEventListener("click", del_parent("bubbleSkill"+c));
+// 	c = c + 1;
+// 	console.log(c,"bubbleSkill"+c)
 
+// }
