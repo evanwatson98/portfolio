@@ -85,18 +85,43 @@
 			from {bottom: 0px;}
   		to {bottom:100%;}
 		}
+		
+		.goToSite{
+			position: absolute;
+			right:0;
+			top: 100;
+			color: white;
+			font-weight: 100px;
+			background: none;
+			border: none;
+			
+		}
+		
+		.goToSite:hover{
+			cursor: grab;
+		}
+		
+		.welcomeContainer{
+			z-index: 9;
+			position: absolute;
+			background-color: transparent;
+			height: 100%;
+			width: 100%;
+			
+		}
 
 </style>
 
 	<body>
-		<section id="background">
-		</section>
-		<img src="cropped-br-suite.png" alt= "" class="me-img">
-		<div class="introBubble" id="introBubble">
-			<div class="bubble-back"></div>
-			<div class="bubbleContent"></div>			
+		<div class="welcomeContainer" id="welcomeContainer">
+			<section id="background"></section>
+			<img src="cropped-br-suite.png" alt= "" class="me-img">
+			<div class="introBubble" id="introBubble">
+				<div class="bubble-back"></div>
+				<div class="bubbleContent"></div>			
+			</div>
+			<button class="goToSite" id="goToSite" ></button>
 		</div>
-
 	</body>
 	<script src="home.js"></script>
 </html>

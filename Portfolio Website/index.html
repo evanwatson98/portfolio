@@ -19,11 +19,142 @@
 	<link rel="stylesheet" href="portfolio.css" type="text/css">
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	  
+	  <style>
+		
+		body{
+			overflow: hidden;
+			font-family: 'Raleway', sans-serif;
+		}
+		
+		#background{
+			background-image: url(skyscraper3.jpg);
+			background-size: cover;
+			position: relative;
+			background-position: top center;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		#background::before{
+			position: absolute;
+			content: "";
+			left: 0;
+			top: 0;
+			bottom:0;
+			right: 0;
+			width:100%;
+			background-color: black;
+			opacity: .6;
+		}
+	.me-img{
+		width:50%;
+		height: auto;
+		position: absolute;
+		bottom: 0px;
+		right: 20px;
+		justify-content: flex-end;
+		animation: mymove 5s 1;
+	}
+		@keyframes mymove{
+			from {right: -100%;}
+  		to {bottom: 0px;}
+		}
+		
+		.introBubble{
+			position: absolute;
+			content: "";
+			width: 450px;
+			height: 100%;
+			left: 100px;
+/*			animation: bubblemove 5s 1;*/
+			overflow: hidden;
+		}
+		
+		.bubble-back::before{
+			position: absolute;
+			content: "";
+			left: 0;
+			top: 0;
+			bottom:0;
+			right: 0;
+			width:100%;
+			opacity: .4;
+/*			background-color: white;*/
+			border-radius: 10px 10px 10px 10px;
+		}
+		
+		.bubbleContent{
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			left: 0;
+			font-size: 50px;
+			color: white;
+			padding: 20px;
+			animation: bubblemove 5s 1 linear; 
+			animation-fill-mode: forwards;
+			word-wrap: break-word;
+		
+		}
+		
+		@keyframes bubblemove{
+			from {bottom: 0px;}
+  		to {bottom:100%;}
+		}
+		
+		.goToSite{
+			position: absolute;
+			right:0;
+			top: 100;
+			color: white;
+			font-weight: 100px;
+			background: none;
+			border: none;
+			
+		}
+		
+		.goToSite:hover{
+			cursor: grab;
+		}
+		
+		.welcomeContainer{
+			z-index: 100;
+			position: absolute;
+			background-color: transparent;
+			height: 100%;
+			width: 100%;
+			
+		}
+
+</style>
   </head>
 
-
-
   <body class="">
+	  
+<!--
+	  ////////////////////////////////////////////
+	  Welcome
+-->
+	  
+	  
+	 		<div class="welcomeContainer" id="welcomeContainer">
+			<section id="background"></section>
+			<img src="cropped-br-suite.png" alt= "" class="me-img">
+			<div class="introBubble" id="introBubble">
+				<div class="bubble-back"></div>
+				<div class="bubbleContent"></div>			
+			</div>
+			<button class="goToSite" id="goToSite" ></button>
+		</div>
+	<script src="home.js"></script>
+	  
+	  
+<!--
+	  End Welcome
+	  ////////////////////////////////////////////
+-->
+	  
 	  
 <!--	  GLOBAL-->
 	<div class="nav-bar d-flex p-3" style="position: relative;">
