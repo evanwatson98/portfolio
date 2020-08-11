@@ -57,22 +57,31 @@ function moveWelcome(elmnt) {
 	}
   }
 	var ct = 0;
+	var move = "";
+
 	function closeDragElement() {
 		ct = elmnt.offsetLeft - pos1;
-		if((ct) < -500){
-			while(ct > ((-1 * (window.screen.availWidth)) - 10)){
-				setTimeout(moveWelcome,100);
-			}
-			document.querySelector("#body").style.overflow = "visible";
+		if((ct) < -100){
+//			while(ct > ((-1 * (window.screen.availWidth)) - 10)){
+			move = setInterval(moveWelcome,5);
+//			}
 			
 		}
 		document.onmouseup = null;
 		document.onmousemove = null;
   }
 	function moveWelcome(){
-		ct--;
+		ct = ct - 3;
 		elmnt.style.left = ct + "px";
 		console.log(ct + "px");
+		
+		if(ct < ((-1 * (window.screen.availWidth)) - 10)){
+				clearInterval(move);
+				document.querySelector("#body").style.overflow = "visible";
+				
+				var myobj = document.getElementById("welcomeContainer");
+				myobj.remove();
+			}
 
 		document.onmouseup = null;
 		document.onmousemove = null;
@@ -81,7 +90,7 @@ function moveWelcome(elmnt) {
 
 function makeDragIcon(){
 	var moveButton = document.querySelector("#goToSite");
-	moveButton.innerHTML = "Drag Here to Begin Our Introduction";
+	moveButton.innerHTML = "Drag Left to Begin Our Introduction";
 	document.querySelector("#goToSite").addEventListener("keydown", moveWelcome(document.querySelector("#welcomeContainer")));
 }
 window.setTimeout(makeDragIcon,5000);
