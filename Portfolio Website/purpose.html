@@ -5,14 +5,52 @@
 <title>purpose</title>
 	 <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style>
+		.timeIcon{
+			width: 20%;
+			position: absolute; 
+			top: 50%; 
+			content: url('plainSun.svg');
+		}
+		
+		.star{
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			box-shadow:
+        inset 0 0 50px #fff,      /* inner white */
+        inset 20px 0 80px #f5fcff,   /* inner left magenta short */
+        inset -20px 0 80px #0ff,  /* inner right cyan short */
+        inset 20px 0 300px #f0f,  /* inner left magenta broad */
+        inset -20px 0 300px #0ff, /* inner right cyan broad */
+        0 0 50px #fff,            /* outer white */
+        -10px 0 80px #fff,        /* outer left magenta */
+        10px 0 80px #fff;         /* outer right cyan */}
+		}
+	</style>
 </head>
 
 <body>
-	<div class="purposeBlock d-flex" style="justify-content: center;">
-		<div class="curSun" id="curSun"><img src="sun.svg"></div>
-		<div class="wakeUp">
-			<h3 style="color: orange;">Why I Wake Up</h3>
-			<img src="purposeBackgroundMorning.png" style="width: 500px">
+	<div class="wakeUpContainer d-flex" id ="wakeUpContainer" style="position: relative; padding: 30px; height: 100%; width:100%; background-color: rgb(36, 197, 255);">
+		<div class="star"></div>
+<!--
+		<div class="buildStar">
+			<div class="arrow-up"></div>
+			<div class="arrow-down"></div>
+			<div class="arrow-left"></div>
+			<div class="arrow-right"></div>
+		</div>
+-->
+		
+		<div class="curSun" id="curSun" style="width: 500px; height: 500px; position: absolute; overflow: hidden;">
+			<div class="timeIcon" id = "timeIcon"></div>
+		</div>
+		<div class="purposeBlock d-flex" id="purposeBlock" style="position: relative; justify-content: center; width: 100%; height: 100%; border-radius: 0 20px 20px 0;">
+			<div class="wakeUp">
+				<h3 style="color: white; position: relative;" class="d-flex justify-content-center pb-4 pt-2">Why I Wake Up</h3>
+				<img src="purposeBackgroundMorning.png" class="pb-3" style="width: 500px; position: relative;">
+			</div>
 		</div>
 	</div>
 	
