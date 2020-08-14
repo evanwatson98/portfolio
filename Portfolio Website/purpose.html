@@ -3,14 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>purpose</title>
+<!--	Sun Family-->
+	<link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Lemonada&display=swap" rel="stylesheet">
+	
 	 <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<style>
+		div, body, p{
+/*			font-family: 'Lemonada', cursive;*/
+			font-family: 'Waiting for the Sunrise', cursive;
+			font-weight: 100px;
+		}
 		.timeIcon{
 			width: 20%;
 			position: absolute; 
 			top: 50%; 
 			content: url('plainSun.svg');
+		}
+		
+		.whyWake{
+			color: white; position: absolute; font-size: 50px; font-weight: 50px; padding-left: 50px;
+		}
+		
+		.whyStay{
+			color: white; position: absolute;  top: 200px; font-size: 50px; font-weight: 50px; padding-left: 50px;
+		}
+		
+		.whyStep{
+			color: white; position: absolute; font-size: 50px; font-weight: 50px; padding-left: 50px; top: 100px;
 		}
 		
 		.star{
@@ -32,24 +54,25 @@
 </head>
 
 <body>
-	<div class="wakeUpContainer d-flex" id ="wakeUpContainer" style="position: relative; padding: 30px; height: 100%; width:100%; background-color: rgb(36, 197, 255);">
-		<div class="star"></div>
-<!--
-		<div class="buildStar">
-			<div class="arrow-up"></div>
-			<div class="arrow-down"></div>
-			<div class="arrow-left"></div>
-			<div class="arrow-right"></div>
-		</div>
--->
+	<div class="wakeUpContainer d-flex" id ="wakeUpContainer" style="position: relative; padding: 30px; height: 100%; width:100%; background-color: rgb(36, 197, 255); background-size: contain;">
 		
+		<div class="purposeInstructions d-flex" style="position: absolute; bottom: 0px; padding-bottom: 20px; font-size: 50px; color: white;">Press <img src="leftArrow.svg" style="width: 50px; padding-left: 10px;"><img src="rightArrow.svg" style="width: 50px; padding-right: 10px;"></div>
 		<div class="curSun" id="curSun" style="width: 500px; height: 500px; position: absolute; overflow: hidden;">
 			<div class="timeIcon" id = "timeIcon"></div>
 		</div>
-		<div class="purposeBlock d-flex" id="purposeBlock" style="position: relative; justify-content: center; width: 100%; height: 100%; border-radius: 0 20px 20px 0;">
-			<div class="wakeUp">
-				<h3 style="color: white; position: relative;" class="d-flex justify-content-center pb-4 pt-2">Why I Wake Up</h3>
-				<img src="purposeBackgroundMorning.png" class="pb-3" style="width: 500px; position: relative;">
+		
+		<div class="purposeBlock d-flex" id="purposeBlock" style="position: relative; justify-content: flex-end; width: 100%; height: 100%; border-radius: 0 20px 20px 0;">
+			<div class="wakeUp" id="wakeUp">
+				<div class="d-flex justify-content-center" style="position: relative; overflow: hidden;">
+					<h3 style="color: white; position: relative; font-size: 50px; font-weight: 50px;" class="d-flex justify-content-center pt-2"><p>Why I</p>
+						<div class="why" style="width: 200px;">
+							<div class="whyWake" id="whyWake"> Wake</div> 
+							<div class="whyStep" id="whyStep"> Step</div> 
+							<div class="whyStay" id="whyStay"> Stay</div> 
+						</div>
+						<p>Up</p></h3>
+				</div>
+				<img src="purposeBackgroundTest.svg" class="pb-3" style="width: 500px; position: relative;">
 			</div>
 		</div>
 	</div>

@@ -6,10 +6,6 @@ document.addEventListener('keyup', (event) => {
 		const keyName = event.key;
 		if(keyName == "ArrowRight" || keyName == "ArrowLeft"){
 			clearInterval(move);
-			console.log("Release");
-			console.log("Release Clear Move");
-//			alert('keyup event\n\n' + 'key: ' + keyName);
-
 		}
 	});
 var ogX = document.querySelector("#curSun").getBoundingClientRect().left;
@@ -37,7 +33,6 @@ function checkKey(e) {
 //	var x_velocity = vel * deltaSec * Math.cos(alpha);
 //	var y_velocity = vel * deltaSec * Math.sin(alpha);
 	
-	//&& ((sunBox.offsetLeft + x) <= 279)
     if (e.keyCode == '39') {
         // right arrow
 		k = 0;
@@ -52,14 +47,17 @@ function checkKey(e) {
 		move = setInterval(startMove, 10);
     }
 	
-	var boxLimit = 200;
 	var r = 255;
 	var g = 193;
 	var b = 77;
 	var purposeBackground = document.querySelector("#wakeUpContainer");
 	var timeIcon = document.querySelector("#timeIcon");
+	var whyWakeBox = document.querySelector("#whyWake");
+	var whyStepBox = document.querySelector("#whyStep");
+	var whyStayBox = document.querySelector("#whyStay");
 	
 	function startMove(){
+		var boxLimit = document.querySelector("#wakeUp").offsetLeft - 80;
 		e = e || window.event;
 		
 		console.log(sunBox.offsetLeft);
@@ -71,17 +69,21 @@ function checkKey(e) {
 		else if(k==0){
 			//move right
 			if(sunBox.offsetLeft == ((ogX+x_velocity)*2)){
+				purposeBackground.style.backgroundImage = "none";
 				purposeBackground.style.backgroundColor = "rgb(" + r +", " + g +", " + b +")";
 				timeIcon.style.content = "url('sun.svg')";
 			}
 			else if(sunBox.offsetLeft == ((ogX+x_velocity)*3)){
-				purposeBackground.style.backgroundColor = "rgb(" + 0 +", " + 0 +", " + 0 +")";
+				purposeBackground.style.backgroundImage = "url('stars.jpg')";
 				timeIcon.style.content = "url('cresMoon.svg')";
 			}
 			
 			sunBox.style.left = sunBox.offsetLeft + x_velocity + "px";
-//			sunBox.style.top = (sunBox.offsetTop + y_velocity) + "px";
-//				sunBox.style.top = y + y_velocity;
+			sunBox.style.top = sunBox.offsetTop - y_velocity + "px";
+			
+			whyWakeBox.style.top = whyWakeBox.offsetTop - x_velocity + "px";
+			whyStepBox.style.top = whyStepBox.offsetTop - x_velocity + "px";
+			whyStayBox.style.top = whyStayBox.offsetTop - x_velocity + "px";
 		}
 		else if(k==1){
 			
@@ -90,6 +92,7 @@ function checkKey(e) {
 				timeIcon.style.content = "url('plainSun.svg')";
 			}
 			else if(sunBox.offsetLeft == ((ogX+x_velocity)*3)){
+				purposeBackground.style.backgroundImage = "none";
 				purposeBackground.style.backgroundColor = "rgb(" + r +", " + g +", " + b +")";
 				timeIcon.style.content = "url('sun.svg')";
 			}
@@ -97,6 +100,9 @@ function checkKey(e) {
 			if(sunBox.offsetLeft > ogX){
 				//move left
 				sunBox.style.left = sunBox.offsetLeft - x_velocity + "px";
+				whyWakeBox.style.top = whyWakeBox.offsetTop + x_velocity + "px";
+				whyStepBox.style.top = whyStepBox.offsetTop + x_velocity + "px";
+				whyStayBox.style.top = whyStayBox.offsetTop + x_velocity + "px";
 	//			sunBox.style.top = (sunBox.offsetTop + (-1*(sunBox.offsetTop * Math.sin(5)))) + "px";
 	//			sunBox.style.top = slope;
 	//			console.log("x: " + moveLeftx + "px, y: " + ( slope) + "px");
