@@ -68,30 +68,29 @@ function checkKey(e) {
 		}
 		else if(k==0){
 			//move right
-			if(sunBox.offsetLeft == ((ogX+x_velocity)*2)){
-				purposeBackground.style.backgroundImage = "none";
+			if(sunBox.offsetLeft == ((ogX+x_velocity)*6)){
 				purposeBackground.style.backgroundColor = "rgb(" + r +", " + g +", " + b +")";
 				timeIcon.style.content = "url('sun.svg')";
 			}
-			else if(sunBox.offsetLeft == ((ogX+x_velocity)*3)){
+			else if(sunBox.offsetLeft == ((ogX+x_velocity)*12)){
 				purposeBackground.style.backgroundImage = "url('stars.jpg')";
 				timeIcon.style.content = "url('cresMoon.svg')";
 			}
 			
 			sunBox.style.left = sunBox.offsetLeft + x_velocity + "px";
-			sunBox.style.top = sunBox.offsetTop - y_velocity + "px";
-			
+//			sunBox.style.top = sunBox.offsetTop - y_velocity + "px";
+//			
 			whyWakeBox.style.top = whyWakeBox.offsetTop - x_velocity + "px";
 			whyStepBox.style.top = whyStepBox.offsetTop - x_velocity + "px";
 			whyStayBox.style.top = whyStayBox.offsetTop - x_velocity + "px";
 		}
 		else if(k==1){
 			
-			if(sunBox.offsetLeft == ((ogX+x_velocity)*2)){
+			if(sunBox.offsetLeft == ((ogX+x_velocity)*6)){
 				purposeBackground.style.backgroundColor = "rgb(" + 36+", " + 197 +", " + 255 +")";
 				timeIcon.style.content = "url('plainSun.svg')";
 			}
-			else if(sunBox.offsetLeft == ((ogX+x_velocity)*3)){
+			else if(sunBox.offsetLeft == ((ogX+x_velocity)*12)){
 				purposeBackground.style.backgroundImage = "none";
 				purposeBackground.style.backgroundColor = "rgb(" + r +", " + g +", " + b +")";
 				timeIcon.style.content = "url('sun.svg')";
