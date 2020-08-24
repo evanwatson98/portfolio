@@ -20,7 +20,6 @@
 			width: 20%;
 			position: absolute; 
 			top: 50%; 
-			content: url('plainSun.svg');
 		}
 		
 		.whyWake{
@@ -50,18 +49,70 @@
         -10px 0 80px #fff,        /* outer left magenta */
         10px 0 80px #fff;         /* outer right cyan */}
 		}
+		
+		.plainSun{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+		}
+		
+		.sun{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			visibility: hidden;
+		}
+		
+		.cresMoon{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			visibility: hidden;
+
+		}
+		.purposeBackgroundSun{
+			position: absolute;
+			width: 100%;
+			height: 600px;
+			background-color: orange;
+			z-index: -2;
+		}
+		.purposeBackgroundPlainSun{
+			position: absolute;
+			width: 100%;
+			height: 600px;
+			background-color: rgb(36, 197, 255);
+			z-index: -1;
+		}
+		
+		.purposeBackgroundCresMoon{
+			position: absolute;
+			width: 100%;
+			height: 600px;
+			background-color: black;
+			z-index: -3;
+			
+		}
 	</style>
 </head>
 
 <body>
-	<div class="wakeUpContainer d-flex" id ="wakeUpContainer" style="position: relative; padding: 30px; height: 100%; width:100%; background-color: rgb(36, 197, 255); background-size: contain;">
+	<div class="purposeBackgroundSun" id ="purposeBackgroundSun"></div>
+	<div class="purposeBackgroundPlainSun" id ="purposeBackgroundPlainSun"></div>
+	<div class="purposeBackgroundCresMoon" id ="purposeBackgroundCresMoon"></div>
+	
+	<div class="wakeUpContainer d-flex" id ="wakeUpContainer" style="position: relative; padding: 30px; height: 100%; width:100%; background-color: transparent; background-size: contain;">
 		
 		<div class="purposeInstructions d-flex" style="position: absolute; bottom: 0px; padding-bottom: 20px; font-size: 50px; color: white;">Press <img src="leftArrow.svg" style="width: 50px; padding-left: 10px;"><img src="rightArrow.svg" style="width: 50px; padding-right: 10px;"></div>
+		
 		<div class="curSun" id="curSun" style="width: 500px; height: 500px; position: absolute; overflow: hidden;">
-			<div class="timeIcon" id = "timeIcon"></div>
+			<div class="timeIcon" id = "timeIcon"><img src="plainSun.svg" class="plainSun" id="plainSun"><img src="sun.svg" class="sun" id="sun"><img src="cresMoon.svg" class="cresMoon" id="cresMoon"></div>
 		</div>
 		
-		<div class="purposeBlock d-flex" id="purposeBlock" style="position: relative; justify-content: flex-end; width: 100%; height: 100%; border-radius: 0 20px 20px 0;">
+		<div class="purposeBlock d-flex" id="purposeBlock" style="position: relative; justify-content: center; width: 100%; height: 100%; border-radius: 0 20px 20px 0;">
 			<div class="wakeUp" id="wakeUp">
 				<div class="d-flex justify-content-center" style="position: relative; overflow: hidden;">
 					<h3 style="color: white; position: relative; font-size: 50px; font-weight: 50px;" class="d-flex justify-content-center pt-2"><p>Why I</p>
@@ -76,7 +127,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	
 	
 	
