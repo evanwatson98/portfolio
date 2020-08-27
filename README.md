@@ -32,18 +32,18 @@ The goal of this repository is to give access to potential employers Evan Watson
 | Tools Used | HTML, PHP, MySql, LucidChart|
 | Platform | Web |
 | Goal | Build an example Relational Database for classes at IU |
-| Description | As a final project at IU, we were tasked with creating a fully functioning moch Database for IU classes. This includes the teachers, students, and grading system that would be needed on order to enlist in a class. We then built a simple HTML webpage that would allow a user the ablility to gather specific data through queries based on questions we were given. |
+| Description | As a final project for a Relational Database class at IU, we were tasked with creating a fully functioning moch Database for IU classes. This included the teachers, students, and grading system that would be needed to enlist in a class. We then built a simple HTML webpage that would allow a user the ablility to gather specific data through queries based on questions we were given. |
 
 <br>
 
 ## <a href="https://github.com/evanwatson98/portfolio/tree/master/Performance%20Analytics"> Performance Analytics 
 
-<img src="Resources/Images/results.png" alt="results" width="300" height="auto"/> </a>
+<img src="Resources/Images/results.png" alt="results" width="600" height="auto"/> </a>
 
 | Item        | Value           |
 | ------------- |:-------------:|
 | Tools Used | Python, BeautifulSoup, Jupyter Notebook |
-| Goal | Create a script that would scrape a large amount of data to find if there is any coorelation between a Quarterbacks physical features and their overrall ranking. |
-| Description | We developed a python script that would grab the power rankings of all Quarterbacks in the NFL from the information we gathered. |
+| Goal | Create a script that would scrape a large amount of data to find if there is any coorelation between a Quarterbacks physical features and their overrall ranking for yards thrown. |
+| Description | We developed a python script that would grab the most up to date power rankings of all Quarterbacks in the NFL from the website https://www.pro-football-reference.com/. We then created many statisitcal graphs that we built based on the information we gathered. Comparing features like their age and height with their overall yards thrown.|
 
 ## <a href="https://github.com/evanwatson98/portfolio/tree/master/Performance%20Analytics"> Movie Theater GUI </a>
