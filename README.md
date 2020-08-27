@@ -1,6 +1,6 @@
 <div class="flex-container">
 
-<img src="Resources/Images/headshot.png" alt="results" width="200" height="200"/> </a>
+<img src="Resources/Images/headshot.png" alt="results" width="200" height="auto"/> </a>
 
 # Evan Watson's Portfolio
 
@@ -13,7 +13,7 @@ The goal of this repository is to give access to potential employers Evan Watson
 
 ## <a href="https://github.com/evanwatson98/portfolio/tree/master/Capstone"> Keepin' it Fresh
 
-<img src="Resources/Images/whitelogo.jpg" alt="results" style="50px;"/> </a>
+<img src="Resources/Images/whitelogo.jpg" alt="results" style="width: 50px; height: auto;"/> </a>
 
 ## <a href="https://github.com/evanwatson98/portfolio/tree/master/Database/Information%20Representation%20Final%20Project"> IU Database Final Project
 
