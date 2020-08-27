@@ -25,7 +25,9 @@ The goal of this repository is to give access to potential employers Evan Watson
 
 ## <div align="center"> <a href="https://github.com/evanwatson98/portfolio/tree/master/Database/Information%20Representation%20Final%20Project"> IU Database Final Project
 
-<img src="Resources/Images/IS_Final_Project_ERD.jpeg" alt="results" width="300" height="auto"/> </a></div>
+<img src="Resources/Images/IS_Final_Project_ERD.jpeg" alt="results" width="300" height="auto"/> </a>
+
+</div>
 
 | Item        | Value           |
 | ------------- |:-------------:|
@@ -38,7 +40,9 @@ The goal of this repository is to give access to potential employers Evan Watson
 
 ## <div align="center"> <a href="https://github.com/evanwatson98/portfolio/tree/master/Performance%20Analytics"> Performance Analytics 
 
-<img src="Resources/Images/results.png" alt="results" width="600" height="auto"/> </a></div>
+<img src="Resources/Images/results.png" alt="results" width="600" height="auto"/> </a>
+
+</div>
 
 | Item        | Value           |
 | ------------- |:-------------:|
