@@ -9,7 +9,7 @@
 ## Last Updated: 8/26/2020
 The goal of this repository is to give access to potential employers Evan Watson's portfolio. Which includes both individual and group projects that he has accomplished.
 
-# <div align="center"> Projects </div>
+# <div align="center"> Projects
 
 ## <a href="https://github.com/evanwatson98/portfolio/tree/master/Capstone"> Keepin' it Fresh
 
@@ -47,3 +47,4 @@ The goal of this repository is to give access to potential employers Evan Watson
 | Description | We developed a python script that would grab the most up to date power rankings of all Quarterbacks in the NFL from the website https://www.pro-football-reference.com/. We then created many statisitcal graphs that we built based on the information we gathered. Comparing features like their age and height with their overall yards thrown.|
 
 ## <a href="https://github.com/evanwatson98/portfolio/tree/master/Performance%20Analytics"> Movie Theater GUI </a>
+</div>
