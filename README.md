@@ -13,7 +13,7 @@ The goal of this repository is to give access to potential employers Evan Watson
 
 ## <a href="https://github.com/evanwatson98/portfolio/tree/master/Capstone"> Keepin' it Fresh
 
-<img src="Resources/Images/whitelogo.jpg" alt="results" width="300" height="auto"/> test </a>
+<img src="Resources/Images/whitelogo.jpg" alt="results" width="300" height="auto"/></a> Status: Ongoing /n tt <br> test
 
 ## <a href="https://github.com/evanwatson98/portfolio/tree/master/Database/Information%20Representation%20Final%20Project"> IU Database Final Project
 
