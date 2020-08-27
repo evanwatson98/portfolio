@@ -1,6 +1,6 @@
 <div class="flex-container">
 
-<img src="Resources/Images/headshot.png" alt="results" style="50px;"/> </a>
+<img src="Resources/Images/headshot.png" alt="results" width="200" height="200"/> </a>
 
 # Evan Watson's Portfolio
 
