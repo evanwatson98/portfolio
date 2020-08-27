@@ -1,10 +1,17 @@
+<div class="flex-container">
+
+<img src="Resources/Images/headshot.png" alt="results" style="50px;"/> </a>
+
 # Evan Watson's Portfolio
+
+</div>
+
 ## Last Updated: 7/11/2020
 The goal of this repository is to give access to potential employers Evan Watson's portfolio. Which includes both individual and group projects that he has accomplished.
 
-<div align="center"> # Projects </div>
+# <div align="center"> Projects </div>
 
-<a href="https://github.com/evanwatson98/portfolio/tree/master/Capstone"> Keepin' it Fresh
+## <a href="https://github.com/evanwatson98/portfolio/tree/master/Capstone"> Keepin' it Fresh
 
 <img src="Resources/Images/whitelogo.jpg" alt="results" style="50px;"/> </a>
 
