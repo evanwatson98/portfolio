@@ -9,11 +9,11 @@
 ## Last Updated: 8/26/2020
 The goal of this repository is to give access to potential employers Evan Watson's portfolio. Which includes both individual and group projects that he has accomplished.
 
-# <div align="center"> Projects
+# <div align="center"> Projects</div>
 
-## <a href="https://github.com/evanwatson98/portfolio/tree/master/Capstone"> Keepin' it Fresh
+## <div align="center"> <a href="https://github.com/evanwatson98/portfolio/tree/master/Capstone"> Keepin' it Fresh
 
-<img src="Resources/Images/whitelogo.jpg" alt="results" width="300" height="auto"/></a>
+<img src="Resources/Images/whitelogo.jpg" alt="results" width="300" height="auto"/></a> </div>
 
 | Item        | Value           |
 | ------------- |:-------------:|
@@ -23,9 +23,9 @@ The goal of this repository is to give access to potential employers Evan Watson
 | Description | App that systematically keeps track of your food. Providing possible ways to use specific items and notify you when your groccery food is going to expire. |
 | Features | Catalog, Community Forum, Notifications, Recommendations, UPC scanning |
 
-## <a href="https://github.com/evanwatson98/portfolio/tree/master/Database/Information%20Representation%20Final%20Project"> IU Database Final Project
+## <div align="center"> <a href="https://github.com/evanwatson98/portfolio/tree/master/Database/Information%20Representation%20Final%20Project"> IU Database Final Project
 
-<img src="Resources/Images/IS_Final_Project_ERD.jpeg" alt="results" width="300" height="auto"/> </a>
+<img src="Resources/Images/IS_Final_Project_ERD.jpeg" alt="results" width="300" height="auto"/> </a></div>
 
 | Item        | Value           |
 | ------------- |:-------------:|
@@ -36,9 +36,9 @@ The goal of this repository is to give access to potential employers Evan Watson
 
 <br>
 
-## <a href="https://github.com/evanwatson98/portfolio/tree/master/Performance%20Analytics"> Performance Analytics 
+## <div align="center"> <a href="https://github.com/evanwatson98/portfolio/tree/master/Performance%20Analytics"> Performance Analytics 
 
-<img src="Resources/Images/results.png" alt="results" width="600" height="auto"/> </a>
+<img src="Resources/Images/results.png" alt="results" width="600" height="auto"/> </a></div>
 
 | Item        | Value           |
 | ------------- |:-------------:|
@@ -46,5 +46,4 @@ The goal of this repository is to give access to potential employers Evan Watson
 | Goal | Create a script that would scrape a large amount of data to find if there is any coorelation between a Quarterbacks physical features and their overrall ranking for yards thrown. |
 | Description | We developed a python script that would grab the most up to date power rankings of all Quarterbacks in the NFL from the website https://www.pro-football-reference.com/. We then created many statisitcal graphs that we built based on the information we gathered. Comparing features like their age and height with their overall yards thrown.|
 
-## <a href="https://github.com/evanwatson98/portfolio/tree/master/Performance%20Analytics"> Movie Theater GUI </a>
-</div>
+## <div align="center"> <a href="https://github.com/evanwatson98/portfolio/tree/master/Performance%20Analytics"> Movie Theater GUI </a></div>
