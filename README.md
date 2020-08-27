@@ -2,9 +2,15 @@
 
 <img src="Resources/Images/headshot.png" alt="results" width="200" height="auto"/> </a>
 
+# Evan Watson's Portfolio
+
 </div>
 
-# Evan Watson's Portfolio
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
 
 ## Last Updated: 7/11/2020
 The goal of this repository is to give access to potential employers Evan Watson's portfolio. Which includes both individual and group projects that he has accomplished.
